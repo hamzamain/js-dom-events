@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>deliget</title>
+  </head>
+  <body>
+    <h1>Exploring the diliget</h1>
+    <section>
+      <ul id="item-container">
+        <li class="item">Lorem, ipsum.</li>
+        <li class="item">In, maxime.</li>
+        <li class="item">Cupiditate, numquam.</li>
+        <li class="item">Nam, sed!</li>
+        <li class="item">Dolor, iste.</li>
+        <li class="item">Ducimus, et.</li>
+      </ul>
+    </section>
+    <button id="add-btn" onc>add</button>
+    <script>
+      const itemContainer = document.getElementById("item-container");
+
+      itemContainer.addEventListener("click", function (event) {
+        event.target.parentNo.removeChild(event.target);
+      });
+
+      document.getElementById("add-btn").addEventListener("click", function () {
+        const li = document.createElement("li");
+        li.innerText = "A brand new item";
+        itemContainer.appendChild(li);
+      });
+    </script>
+  </body>
+</html>
